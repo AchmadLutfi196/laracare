@@ -1,10 +1,29 @@
 {
     "version": 2,
     "framework": null,
+    "buildCommand": "npm run build",
+    "outputDirectory": "public",
     "functions": {
         "api/index.php": {
             "runtime": "vercel-php@0.7.3"
         }
+    },
+    "env": {
+        "APP_STORAGE_PATH": "/tmp",
+        "VIEW_COMPILED_PATH": "/tmp/views",
+        "CACHE_STORE": "array",
+        "SESSION_DRIVER": "array",
+        "LOG_CHANNEL": "stderr",
+        "APP_NAME": "LaraCare",
+        "APP_ENV": "production",
+        "APP_KEY": "base64:G4RIl4MM3HJKI1liuKpWfbbhXmasB1TczDoSqTQF/c44=",
+        "APP_DEBUG": "false",
+        "APP_URL": "https://laracare-8vsf19912-lutfi-madhanis-projects.vercel.app",
+        "APP_LOCALE": "en",
+        "APP_FALLBACK_LOCALE": "en",
+        "DB_CONNECTION": "sqlite",
+        "DB_DATABASE": "/tmp/database.sqlite",
+        "QUEUE_CONNECTION": "sync"
     },
     "routes": [
         {
